@@ -55,7 +55,8 @@ class Peer():
 
 
 ### Other functionality
-# REGISTER - register (personnummer, node_id) with hospital super node
+# REGISTER - register (personnummer, node_id) with test center
+#          - Get encryption key from center such that results can be verified
 #          - must also connect to pace maker
 # LOGIN - verify that it is you through mobilt bank id
 # DELETE - delete account, data on phone, and de-register from super node

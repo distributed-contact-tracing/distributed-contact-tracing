@@ -12,7 +12,10 @@ class TestCenter():
     """
 
     def deliver_test_results(self, patient_id, results):
-        """ Send the results of a test to a specific patient. """
+        """ 
+        Send the results of a test to a specific patient. 
+        Use encryption to proove you are the real sender. 
+        """
         pass
 
     def receive_registration(self, patient_id, node_id):
