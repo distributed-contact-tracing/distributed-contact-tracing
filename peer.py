@@ -1,10 +1,15 @@
 
 
 class Peer():
-    areas_visited = []
-    saved_locations = {}
-    hashed_events = Set()
+    """ 
+    A class for each node (i.e. phone). 
+    
+    Attributes:  
+        areas_visited = []: A high level description (ie. sthlm,gbg)
+        saved_locations = {time: location}: A  record of locations.
+        hashed_events = Set(): A hash representation of all events. 
 
+    """
 
     def receive_test_result(self, confirmed_ill):
         """ Called from the hospital / test center super node """
@@ -51,6 +56,7 @@ class Peer():
 
 ### Other functionality
 # REGISTER - register (personnummer, node_id) with hospital super node
+#          - must also connect to pace maker
 # LOGIN - verify that it is you through mobilt bank id
 # DELETE - delete account, data on phone, and de-register from super node
 
