@@ -1,2 +1,2 @@
-# hack-the-crisis
+# distributed-contact-tracing
 Distributed Anonymous Contact Tracing 
