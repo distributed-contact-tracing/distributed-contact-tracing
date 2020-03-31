@@ -6,12 +6,15 @@ class TestCenter():
 
     Distributes information regarding who is infected. 
 
+    Make node id so long and sparse it becomes impossible to guess
+    to increase the security in case there is unauthorized access. 
+
     Attributes:
-        registered_patients = {patient_id: node_id}
+        registered_patients = {test_id: node_id}
 
     """
 
-    def deliver_test_results(self, patient_id, results):
+    def deliver_test_results(self, test_id, results):
         """ 
         Send the results of a test to a specific patient. 
         Use encryption to proove you are the real sender. 
